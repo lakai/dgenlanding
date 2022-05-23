@@ -1,0 +1,305 @@
+<html>
+    <head>
+        <title>Documentation - Abstract</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 part">
+                    <h1>Documentation</h1>
+                    <h4>Table of contents : </h4>
+                    <h5>Installation</h5>
+                    <ul>
+                        <li><a href="#local">Running a local server</li>
+                        <li><a href="#live">Running a live server</a></li>
+                    </ul>
+                    <h5>Pages</h5>
+                    <ul>
+                        <li><a href="#homepages">Home Pages</li>
+                        <li><a href="#404">404 Page</a></li>
+                    </ul>
+                    <h5>Sections</h5>
+                    <ul>
+                        <li><a href="#hero">Hero</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <h5>Components</h5>
+                    <ul>
+                        <li><a href="#layout">Layout</a></li>
+                        <li><a href="#content-revealer">Content Revealer</a></li>
+                        <li><a href="#glitch">Glitch Text</a></li>
+                        <li><a href="#baffle">Baffle Text</a></li>
+                        <li><a href="#counter">Counter</a></li>
+                        <li><a href="#animation">Animation Container</a></li>
+                        <li><a href="#progress">Progress Bar</a></li>
+                        <li><a href="#page-revealer">Page Revealer</a></li>
+                    </ul>
+                    
+                </div>
+                <h2 class="section_heading">
+                    Installation
+                </h2>
+                <div class="col-md-12 part" id="local">
+                    <h4>Running a local server</h4>
+                    <p>In order to install you need to have Node version less than v15 otherwise it will not work. This has been tested up to <b>v14.18.1</b> Node version.</p>
+                    <p><b>Installing Node on Windows</b></p>
+                    <p>For Windows 64 bit please download from here <a href="https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi" target="_blank">https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi</a></p>
+                    <p>For Windows 32 bit please download from here <a href="https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x86.msi" target="_blank">https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x86.msi</a></p>
+                    <p>Please open the .msi file to start the installation process.</p>
+                    
+                    <p><b>Installing Node on Mac</b></p>
+                    <p>For Mac OSX please download from here <a href="https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg" target="_blank">https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg</a></p>
+                    <p>Please open the .pkg file and follow the Apple Installer process.</p>
+
+                    <p><b>Installing Node on Linux</b></p>
+                    <p>I recommend installing NVM to use 14.18.1 of Node. You can find the installation instructions here <a href="https://github.com/nvm-sh/nvm" target="_blank">https://github.com/nvm-sh/nvm</a></p>
+                    <p>After installing, please run</p>
+                    <pre>nvm install 14.18.1
+nvm use 14.18.1</pre>
+                    <p>Install Gatby CLI</p>
+                    <pre>
+npm install gatsby-cli -g
+                    </pre>
+                    <p>Run the following commands in the template's directory</p>
+                    <pre>
+npm install
+gatsby develop
+                    </pre>
+                </div>
+                <div class="col-md-12 part"  id="live">
+                    <h4>Running a live  server</h4>
+                    <p>The fastest way to get a live server running is by building and copying the files from <b>public</b> directory to your web directory. To build, run the following command</p>
+                    <pre>
+gatsby build
+                    </pre>
+                    <p>More details can be found here <a href="https://www.gatsbyjs.org/docs/deploying-and-hosting/">https://www.gatsbyjs.org/docs/deploying-and-hosting/</a></p>
+                </div>
+
+                <div class="col-md-12 part"  id="homepages">
+                    <h4>Home pages</h4>
+                    <p>List of the pages and their locations</p>
+                    <p><b>Creative Agency 1 : </b> /src/pages/index.js</p>
+                    <p><b>Creative Agency 2 : </b> /src/pages/creative-2/index.js</p>
+                    <p><b>Creative Agency 1 (Video) : </b> /src/pages/creative-video-1/index.js</p>
+                    <p><b>Creative Agency 2 (Video) : </b> /src/pages/creative-video-2/index.js</p>
+                    <p><b>Personal : </b> /src/pages/personal/index.js</p>
+                    <p><b>Personal (Video): </b> /src/pages/personal-video/index.js</p>
+                </div>
+
+                <div class="col-md-12 part"  id="404">
+                    <h4>404 page</h4>
+                    <p>The 404 page needs to be configured from /src/pages/404.js</p>
+                </div>
+                <h2 class="section_heading">
+                    Sections
+                </h2>
+                <div class="col-md-12 part"  id="hero">
+                    <h4>Hero</h4>
+                    <p>The Hero sections are located at /src/sections/hero/</p>
+                </div>
+
+                <div class="col-md-12 part"  id="about">
+                    <h4>About</h4>
+                    <p>The About sections are located at /src/sections/about/</p>
+                </div>
+
+                <div class="col-md-12 part"  id="services">
+                    <h4>Services</h4>
+                    <p>The Services sections are located at /src/sections/services/</p>
+                </div>
+
+                <div class="col-md-12 part"  id="portfolio">
+                    <h4>Portfolio</h4>
+                    <p>The Portfolio sections are located at /src/sections/portfolio/</p>
+                    <p>The Portfolio content are located on /content/portfolio directory which are fetched using graphql</p>
+                    <pre>
+---
+id: 1
+image: './image.jpg'
+title: "Front-end Development"
+category: "React.js"
+link: "https://www.github.com"
+---
+                    </pre>
+                    <p>The image needs to be placed in the same directory</p>
+                </div>
+                <div class="col-md-12 part" id="testimonials">
+                    <h4>Testimonials</h4>
+                    <p>The Testimonials sections are located at /src/sections/testimonials/</p>
+                    <p>The testimonial content are located on /content/testimonials directory which are fetched using graphql</p>
+                    <pre>
+---
+id: 1
+image: './image.jpg'
+large: './large.jpg'
+name: 'John Doe'
+profession: 'Software Engineer'
+text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel est eu tortor porttitor congue. Praesent finibus eleifend mi, eu dictum est scelerisque ut. Nulla sed nulla sed tellus feugiat dignissim a pulvinar sem.'
+---
+                    </pre>
+                </div>
+
+                <div class="col-md-12 part" id="team">
+                    <h4>Team</h4>
+                    <p>The Team sections are located at /src/sections/team/</p>
+                    <p>The Team content are located on /content/team directory which are fetched using graphql</p>
+                    <pre>
+---
+id: 1
+image: './image.jpg'
+name: "Robert Doe"
+profession: "Angular Developer"
+facebook: "https://www.facebook.com/"
+twitter: "https://www.twitter.com/"
+linkedin: "https://www.linkedin.com/"
+github: "https://github.com/"
+---
+                        
+                    </pre>
+                </div>
+
+                <div class="col-md-12 part" id="clients">
+                    <h4>Clients</h4>
+                    <p>The Clients sections are located at /src/sections/team/</p>
+                    <p>The Clients logo are at /content/images/clients</p>
+                </div>
+                
+                
+                
+                <div class="col-md-12 part" id="contact">
+                    <h4>Contact</h4>
+                    <p>The Contact section is located at /src/sections/contact/</p>
+                </div>
+                <h2 class="section_heading">
+                    Components
+                </h2>
+
+                <div class="col-md-12 part" id="layout">
+                    <h4>Layout</h4>
+                    <p>The component is located on /src/components/layout</p>
+                    <p>The IDs of sections are passed as prop</p>
+                    <pre>
+sections={['home', 'about', 'services', 'portfolio', 'testimonials', 'team', 'clients', 'contact']}
+                    </pre>
+                    
+                </div>
+
+                <div class="col-md-12 part" id="content-revealer">
+                    <h4>Content Revealer</h4>
+                    <p>The component is located on /src/components/reveal-content</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li>
+                            <b>callParentMethod</b> <span> (boolean)</span>
+                        </li>
+                        <li>
+                            <b>parentMethod</b> <span> (function)</span>
+                        </li>
+                        <li>
+                            <b>delay</b> <span> (int)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 part" id="glitch">
+                    <h4>Glitch Text</h4>
+                    <p>The component is located on /src/components/glitch</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>text</b> <span> (string)</span></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-12 part" id="baffle">
+                    <h4>Baffle Text</h4>
+                    <p>The component is located on /src/components/baffle-text</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>text</b> <span> (string)</span></li>
+                        <li><b>revealDuration</b> <span> (int)</span></li>
+                        <li><b>revealDelay</b> <span> (int)</span></li>
+                        <li><b>revealDelay</b> <span> (int)</span></li>
+                        <li><b>parentMethod</b> <span> (function)</span></li>
+                        <li><b>callMethodTime</b> <span> (int)</span></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-12 part" id="counter">
+                    <h4>Counter</h4>
+                    <p>The component is located on /src/components/counter</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>text</b> <span> (string)</span></li>
+                        <li><b>value</b> <span> (int)</span></li>
+                        <li><b>symbol</b> <span> (string)</span></li>
+                        <li><b>animation</b> <span> (boolean)</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 part" id="animation">
+                    <h4>Animation Container</h4>
+                    <p>The component is located on /src/components/animation-container</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>children</b> <span> (Components)</span></li>
+                        <li><b>animation</b> <span> (className from animate.css)</span></li>
+                        <li><b>id</b> <span> (string)</span></li>
+                        <li><b>height</b> <span> (int)</span></li>
+                        <li><b>delay</b> <span> (int)</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12 part" id="progress">
+                    <h4>Progress</h4>
+                    <p>The component is located on /src/components/progress</p>
+                    <p><b>Supported Props : </b></p>
+                    <ul>
+                        <li><b>text</b> <span> (string)</span></li>
+                        <li><b>value</b> <span> (int)</span></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-md-12 part" id="page-revealer">
+                    <h4>Page Revealer</h4>
+                    <p>The component is located on /src/components/page-revealer</p>
+                </div>
+            </div>
+        
+        </div>
+
+
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .part {
+            padding: 50px 0px;
+        }
+        h4, h5 {
+            padding: 10px 0 0 0;
+        }
+        pre {
+            color: #fff;
+            padding: 10px 20px;
+            border: 1px solid #555;
+        }
+    </style>
+</html>
